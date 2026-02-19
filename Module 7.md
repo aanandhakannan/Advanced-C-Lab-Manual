@@ -15,13 +15,42 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
 
-//type your code here
+struct eligible
+{
+    int age;
+    char n[50];
+};
 
+int main()
+{
+    struct eligible e;
+
+    scanf("%s", e.n);
+    scanf("%d", &e.age);
+
+    if (e.age <= 6)
+        printf("Vaccine Eligibility: No\n");
+    else
+        printf("Vaccine Eligibility: Yes\n");
+
+    printf("Name: %s\n", e.n);
+    printf("Age: %d\n", e.age);
+
+    return 0;
+}
+
+
+
+```
 
 Output:
 
-//paste your output here
+
+<img width="571" height="241" alt="image" src="https://github.com/user-attachments/assets/b5779888-cf96-4272-b2b3-01793cf1cf40" />
+
 
 
 Result:
@@ -43,16 +72,43 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
+#include <stdio.h>
 
-//type your code here
+struct numbers
+{
+    int a;
+    int b;
+};
+
+struct numbers add(struct numbers n)
+{
+    struct numbers result;
+    result.a = n.a + n.b;
+    return result;
+}
+
+int main()
+{
+    struct numbers n, res;
+
+    scanf("%d %d", &n.a, &n.b);
+
+    res = add(n);
+
+    printf("Sum: %d\n", res.a);
+
+    return 0;
+}
 
 
 
+```
 
 Output:
 
+<img width="535" height="228" alt="image" src="https://github.com/user-attachments/assets/e16f22f9-5db8-4c6f-88b0-aef1a24dbb7b" />
 
-//paste your output here
 
 
 
@@ -85,8 +141,36 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
+#include <stdio.h>
+#include <stdlib.h>
 
-//type your code here
+int main()
+{
+    FILE *p;
+    char name[100];
+
+    printf("Enter file name: ");
+    scanf("%s", name);
+
+    p = fopen(name, "w");
+
+    if (p == NULL)
+    {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    printf("File '%s' created successfully.\n", name);
+    printf("File opened successfully.\n");
+
+    fclose(p);
+
+    printf("File closed successfully.\n");
+
+    return 0;
+}
+```
 
 
 
@@ -94,7 +178,8 @@ Program:
 Output:
 
 
-//paste your output here
+<img width="448" height="203" alt="image" src="https://github.com/user-attachments/assets/fd761cad-08c4-47d9-a3f3-b9b35049925b" />
+
 
 
 
@@ -132,16 +217,58 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
+#include <stdio.h>
+#include <stdlib.h>
 
-//type your code here
+int main()
+{
+    FILE *p;
+    char name[100], text[200];
+    int num, i;
 
+    printf("Enter file name: ");
+    scanf("%s", name);
+
+    printf("Enter number of strings: ");
+    scanf("%d", &num);
+
+    p = fopen(name, "w");
+
+    if (p == NULL)
+    {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    printf("File opened successfully.\n");
+
+    getchar();
+
+    for (i = 0; i < num; i++)
+    {
+        printf("Enter string %d: ", i + 1);
+        fgets(text, sizeof(text), stdin);
+        fputs(text, p);
+    }
+
+    fclose(p);
+
+    printf("Data added successfully.\n");
+
+    return 0;
+}
+
+```
 
 
 
 Output:
 
 
-//paste your output here
+<img width="458" height="250" alt="image" src="https://github.com/user-attachments/assets/432ed277-65bd-4edc-aa4f-e09829dcd8e0" />
+
+
 
 
 
@@ -186,16 +313,63 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include <stdio.h>
+#include <stdlib.h>
 
-//type your code here
+struct subject
+{
+    char name[50];
+    int marks;
+};
+
+int main()
+{
+    int n, i;
+    struct subject *s;
+
+    printf("Enter number of subjects: ");
+    scanf("%d", &n);
+
+    s = (struct subject *)malloc(n * sizeof(struct subject));
+
+    if (s == NULL)
+    {
+        printf("Memory allocation failed.\n");
+        return 1;
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        printf("Enter name of subject %d: ", i + 1);
+        scanf("%s", s[i].name);
+
+        printf("Enter marks of subject %d: ", i + 1);
+        scanf("%d", &s[i].marks);
+    }
+
+    printf("\nSubject Details:\n");
+
+    for (i = 0; i < n; i++)
+    {
+        printf("Name: %s\n", s[i].name);
+        printf("Marks: %d\n", s[i].marks);
+    }
+
+    free(s);
+
+    return 0;
+}
 
 
+```
 
 
 Output:
 
 
-//paste your output here
+<img width="389" height="195" alt="image" src="https://github.com/user-attachments/assets/5f1979e5-64c1-4cce-929b-012aa789205f" />
+
 
 
 
