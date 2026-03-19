@@ -1,14 +1,14 @@
-EXP NO:16 C PROGRAM TO SEARCH A GIVEN ELEMENT IN THE GIVEN LINKED LIST.
-Aim:
+### EXP NO:16 C PROGRAM TO SEARCH A GIVEN ELEMENT IN THE GIVEN LINKED LIST.
+### Aim:
 To write a C program to search a given element in the given linked list.
 
-Algorithm:
+### Algorithm:
 1.	Define the structure for a node in a linked list.
 2.	Define the search function to find a specific character in the linked list.
 3.	Initialize the head of the linked list as needed.
 4.	Call the search function and perform other linked list operations as needed.
  
-Program:
+### Program:
 
 ```
 #include <stdio.h>
@@ -64,20 +64,20 @@ int main()
 }
 ```
 
-Output:
+### Output:
 
 <img width="765" height="209" alt="image" src="https://github.com/user-attachments/assets/6f2d10c1-f467-4077-b7a9-f12069b9d2b7" />
 
 
 
 
-Result:
+### Result:
 Thus, the program to search a given element in the given linked list is verified successfully.
 
 
  
-EXP NO:17  PROGRAM TO INSERT A NODE IN A LINKED LIST.
-Aim:
+### EXP NO:17  PROGRAM TO INSERT A NODE IN A LINKED LIST.
+### Aim:
 To write a C program to insert a node in a linked list.
 Algorithm:
 1.	Define the structure for a node in a linked list
@@ -85,7 +85,7 @@ Algorithm:
 3.	Initialize the head of the linked list as needed.
 4.	Call the insert function and perform other linked list operations as needed.
  
-Program:
+### Program:
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -156,28 +156,28 @@ int main()
 }
 ```
 
-Output:
+### Output:
 
 <img width="451" height="196" alt="image" src="https://github.com/user-attachments/assets/ba3a2f1f-d7a7-4455-b991-0b349a96060d" />
 
 
  
-Result:
+### Result:
 Thus, the program to insert a node in a linked list is verified successfully.
 
 
  
-EXP NO:18 C PROGRAM TO TRAVERSE A DOUBLY LINKED LIST
-Aim:
+### EXP NO:18 C PROGRAM TO TRAVERSE A DOUBLY LINKED LIST
+### Aim:
 To write a C program to traverse a doubly linked list.
 
-Algorithm:
+### Algorithm:
 1.	Initialize a temporary pointer (temp) to the head of the list.
 2.	Use a while loop to traverse the list until the end (temp == NULL) is reached.
 3.	Inside the loop, print the data of the current node.
 4.	Move to the next node by updating the temp pointer to point to the next node (temp = temp->next).
  
-Program:
+### Program:
 
 ```
 #include <stdio.h>
@@ -230,29 +230,29 @@ int main()
 }
 ```
 
-Output:
+### Output:
 
 <img width="482" height="152" alt="image" src="https://github.com/user-attachments/assets/6fa7f3e6-a468-4aa2-879c-795f128c94dc" />
 
 
 
-Result:
+3### Result:
 Thus, the program to traverse a doubly linked list is verified successfully. 
 
 
 
-EXP NO:19 C PROGRAM TO INSERT AN ELEMENT IN DOUBLY LINKED LIST
-Aim:
+### EXP NO:19 C PROGRAM TO INSERT AN ELEMENT IN DOUBLY LINKED LIST
+### Aim:
 To write a C program to insert an element in doubly linked list
 
-Algorithm:
+### Algorithm:
 1.	Create a new node (newNode) and allocate memory for it.
 2.	Set the data of the new node to the provided value.
 3.	If the list is empty, set the new node as the head.
 4.	If the list is not empty, traverse the list to find the last node.
 5.	Set the new node's prev pointer to the last node and update the last node's next pointer to the new node.
  
-Program:
+### Program:
 
 ```
 #include <stdio.h>
@@ -318,25 +318,25 @@ int main()
 }
 ```
 
-Output:
+### Output:
 <img width="762" height="215" alt="image" src="https://github.com/user-attachments/assets/967d608a-0b41-4431-98f7-98193b1cc8d4" />
 
 
-Result:
+### Result:
 Thus, the program to insert an element in doubly linked list is verified successfully.
 
 
 
 
-EXP NO:20 C FUNCTION TO DELETE A GIVEN ELEMENT IN THE GIVEN LINKED LIST
+### EXP NO:20 C FUNCTION TO DELETE A GIVEN ELEMENT IN THE GIVEN LINKED LIST
 
 
 
 
-Aim:
+### Aim:
 To write a C function that deletes a given element from a linked list.
 
-Algorithm:
+### Algorithm:
 1.	Check if the Linked List is Empty:
 o	If the head of the linked list is NULL, print a message indicating the list is empty and exit the function.
 2.	Traverse the Linked List:
@@ -355,7 +355,7 @@ o	If the element is not found in any node, print a message indicating the elemen
 6.	End the Function.
 
 
-Program:
+### Program:
 
 ```
 #include <stdio.h>
@@ -451,7 +451,7 @@ int main()
 }
 ```
 
-Output:
+### Output:
 
 <img width="784" height="249" alt="image" src="https://github.com/user-attachments/assets/b4857cb0-5906-4643-85a1-116f27a7515e" />
 
@@ -460,7 +460,7 @@ Output:
 
 
 
-Result:
+###Result:
 Thus, the function that deletes a given element from a linked list is verified successfully.
 
 
